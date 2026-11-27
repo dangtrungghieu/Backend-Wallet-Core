@@ -60,7 +60,7 @@ public final class Money {
 
     public boolean isGreaterThanOrEqual(Money other) {
         validateSameCurrency(other);
-        return this.amount.compareTo(other.amount) >= 0;
+        return this.amount.compareTo(other.amount) <= 0;
     }
 
     @Override
